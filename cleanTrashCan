@@ -1,0 +1,9 @@
+#!/bin/bash
+arrayA=($(find ~/trash/* -mtime +7 | awk '{print $1}'))
+    for file in ${arrayA[@]}
+    do
+        $(rm -rf "${file}")
+        filename="${file##*/}"
+        echo $filename
+        $(sed -i /$filename/'d' "~/trash/.log")
+    done
