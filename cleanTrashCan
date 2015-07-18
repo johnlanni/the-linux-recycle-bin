@@ -5,5 +5,5 @@ arrayA=($(find ~/trash/* -mtime +7 | awk '{print $1}'))
         $(rm -rf "${file}")
         filename="${file##*/}"
         echo $filename
-        $(sed -i /$filename/'d' "~/trash/.log")
+        $(sed -i /$filename/'d' "/home/zhangty/trash/.log")
     done
