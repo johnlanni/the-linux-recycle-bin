@@ -6,9 +6,7 @@ If the options contain -v, then the script will exec '/bin/rm' directly
 
 `
 mv cleanTrashCan  delete  logTrashDir  restoreTrash  ~/bin
-`
 
-`
 chmod +x cleanTrashCan  delete  logTrashDir  restoreTrash
 `
 
